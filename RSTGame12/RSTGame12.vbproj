@@ -1,0 +1,339 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7936D654-BB67-4960-8BF3-FE8E7F5A2C22}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>RSTGame12.My.MyApplication</StartupObject>
+    <RootNamespace>RSTGame12</RootNamespace>
+    <AssemblyName>RSTGame12</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>RSTGame12.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>RSTGame12.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.vb">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\road-top-view-cartoon-asphalt-street-way_543062-3276-ezgif.com-avif-to-png-converter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\road-top-view-cartoon-asphalt-street-way_543062-3276-ezgif.com-avif-to-png-converter %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-980782144-640x640.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Spaceship-PNG-Photo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\58469c62cef1014c0b5e47f6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\58469c62cef1014c0b5e47f61.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image %284%29 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image %283%29 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image %283%29 %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image %283%29 %281%29 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image %283%29 %281%29 %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image %283%29 %281%29 %281%292.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Spaceship-PNG-Photo %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image %283%29 %281%29 %281%29 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image %283%29 %281%29 %281%29 %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image %283%29 %281%29 %281%29 %281%292.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Laser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\360_F_354278690_Vbpc3J7RQPGPbom4Y94wztersfOuxizJ-removebg-preview-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imageedit_1_6466446681.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\star-background-hruhl6b9rgekx1ve %281%29 %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-971578384-170667a.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\360_F_365278674_WY1MIMXRGvum3OuEfuVvT5hMVVQDgGe3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\star-background-hruhl6b9rgekx1ve.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stars-28 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Explosion.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\623cdcca882db2d7efa8d32424a61d29_w200.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-dynamite-tnt-explosion-clip-art-bomb-5ab79287a15f54.911452231521980039661.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dynamite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spike.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spike1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dynamite %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngimg.com - game_over_PNG58.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\text-1705876948489.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\text-1705877115597.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\text-1705877166038.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\text-17058771660381.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\text-1705877419818.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\text-1705877534236.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\text-1705877580535.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\benjamin-b-fxlaserweapon-ezgif.com-optimize %282%29.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LaserCropped.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpaceshipCropped.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GameBackgroundMusic.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="MediaPlayer">
+      <Guid>{22D6F304-B0F6-11D0-94AB-0080C74C7E95}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MenuMusic.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\text-1736299929489.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\text-1736299984339.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\text-1736300154451.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\text-1736300079712.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\text-1736300695653.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PlayerHit.wav" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
